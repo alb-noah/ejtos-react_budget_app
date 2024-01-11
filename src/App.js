@@ -1,7 +1,7 @@
 import React from 'react';
-
+import Remaining from './components/Remaining';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import ExpenseTotal from './components/ExpenseTotal';
 //Code to import Budget.js
 import Budget from './components/Budget';
 
@@ -16,15 +16,24 @@ const App = () => {
                 <h1 className='mt-3'>Company's Budget Allocation</h1>
                     <div className='row mt-3'>
                         {
-                            /* Add Budget component here */
+                                            // Budget component
+                                <div className='col-sm'>
+                                <Budget />
+                            </div>
                         }        
 
                         {
-                            /* Add Remaining component here*/
+                                            //Remaining component
+                            <div className='col-sm'>
+                            <Remaining />
+                        </div>
                         }        
 
                         {
-                            /* Add ExpenseTotal component here */
+                                             //ExpenseTotal component
+                            <div className='col-sm'>
+                            <ExpenseTotal />
+                        </div>
                         }        
                        
                         {
